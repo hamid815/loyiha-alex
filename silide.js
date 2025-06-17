@@ -10,7 +10,7 @@ function changeSlide() {
         currentIndex++;
     }
 
-    document.querySelector('.testimonials_content').style.transform = `translateX(-${currentIndex * (100 / 2.9)}%)`;
+    document.querySelector('.testimonials_content').style.transform = `translateX(-${currentIndex * (100 / 2.94)}%)`;
 }
 
 setInterval(changeSlide, 3000); 
