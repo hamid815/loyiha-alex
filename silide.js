@@ -1,16 +1,18 @@
 let currentIndex = 0;
 
 function changeSlide() {
-    const slides = document.querySelectorAll('.slide');
-    const totalSlides = slides.length;
-    
-    if (currentIndex >= totalSlides  -3) {
-        currentIndex = 0;
-    } else {
-        currentIndex++;
-    }
+  const slides = document.querySelectorAll(".slide");
+  const totalSlides = slides.length;
 
-    document.querySelector('.testimonials_content').style.transform = `translateX(-${currentIndex * (100 / 2.94)}%)`;
+  if (currentIndex >= totalSlides - 3) {
+    currentIndex = 0;
+  } else {
+    currentIndex++;
+  }
+
+  document.querySelector(
+    ".testimonials_content"
+  ).style.transform = `translateX(-${currentIndex * (100 / 2.94)}%)`;
 }
 
-setInterval(changeSlide, 3000); 
+setInterval(changeSlide, 3000);
